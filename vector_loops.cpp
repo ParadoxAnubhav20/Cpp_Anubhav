@@ -1,0 +1,23 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector<int> v;
+    for(int i=0;i<5;i++){
+        int element;
+        cin>>element;
+        v.push_back(element);
+    }
+    for(int i=0;i<v.size();i++){
+        cout<<v[i]<<" ";
+    }
+    for(int i:v){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+    int idx=0;
+    while(idx<v.size()){
+        cout<<v[idx++];
+    }
+    return 0;
+}
